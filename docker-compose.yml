@@ -1,0 +1,9 @@
+  version: '3'
+
+  services:
+
+    benchmark:
+      build: .
+      volumes:
+        - ${PWD}:/code
+      command: ["python", "run_main.py"]
